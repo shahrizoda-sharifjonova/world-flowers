@@ -40,3 +40,38 @@ li{
         background: url(../img/bg_md.svg) top / cover no-repeat;
     }
 }
+.title{
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #4B4A53;
+    span{
+        font-family: Lobster;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        color: #E23E8F;
+    }
+}
+.btn{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #E23E8F;
+    border: 5px solid rgba(226, 62, 143, 0.5);
+    width: 356px;
+    height: 64px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}

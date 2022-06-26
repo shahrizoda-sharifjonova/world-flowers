@@ -177,6 +177,7 @@
         height: 100%;
         padding-right: 35px;
         padding-left: 20px;
+        transition: 300ms ease;
         @include media(1200){
             padding-right: 17px;
             padding-left: 12px;
