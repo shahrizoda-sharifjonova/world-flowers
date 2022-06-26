@@ -6,6 +6,9 @@
     @include media(992){
         padding: 11px 0;
     }
+    @include media(768){
+        backdrop-filter: blur(240px);
+    }
     &__body{
         display: flex;
         justify-content: space-between;
@@ -125,6 +128,7 @@
             left: 0;
             right: 0;
             z-index: -1;
+            backdrop-filter: blur(240px);
         }
     }
     &__li{

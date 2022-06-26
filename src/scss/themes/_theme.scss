@@ -10,9 +10,10 @@
         outline: none;
     }
 }
-html,
 body{
-    height: 100%;
+    &.hidden{
+        overflow: hidden;
+    }
 }
 .wrapper{
     min-height: 100%;
@@ -35,4 +36,7 @@ li{
 }
 .up{
     background: url(../img/bg.svg) top / cover no-repeat;
+    @include media(427){
+        background: url(../img/bg_md.svg) top / cover no-repeat;
+    }
 }

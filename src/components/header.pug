@@ -4,24 +4,25 @@ mixin header()
             a(href="index.html").header__logo 
                 img(src="@img/logo.svg", alt="" draggable="false" loading="lazy") 
             .header__adresses   
-                a(href="#contacts").header__adress #[img(src="@img/header-location.svg", alt="" draggable="false" loading="lazy")] г. Москва, ул. Кирова 13
-                a(href="mailto::test@yandex.ru").header__adress #[img(src="@img/header-mail.svg", alt="" draggable="false" loading="lazy")] test@yandex.ru
+                a(href="#contacts").header__adress #[img(src="@img/header-location.svg", alt="" draggable="false" loading="lazy").disable-md] г. Москва, ул. Кирова 13
+                a(href="mailto::test@yandex.ru").header__adress #[img(src="@img/header-mail.svg", alt="" draggable="false" loading="lazy").disable-md] test@yandex.ru
             .header__order
+                img(src="@img/header-buket.svg", alt="" draggable="false" loading="lazy").enable-md
                 a(href="#!") ЗАКАЗАТЬ БУКЕТ 
                 img(src="@img/header-buket.svg", alt="" draggable="false" loading="lazy")
             a(href="tel::8(999)111-22-33").header__phone 8 (999) 111-22-33
-        .header__list.container 
-            li.header__li 
-                a(href="#!").header__link.active #[img(src="@img/top-icon-1.svg", alt="" draggable="false" loading="lazy")] Букеты
-            li.header__li 
-                a(href="#!").header__link #[img(src="@img/top-icon-2.svg", alt="" draggable="false" loading="lazy")] Корзины
-            li.header__li 
-                a(href="#!").header__link #[img(src="@img/top-icon-3.svg", alt="" draggable="false" loading="lazy")] В коробке
-            li.header__li 
-                a(href="#!").header__link #[img(src="@img/top-icon-4.svg", alt="" draggable="false" loading="lazy")] Свадьбы
-            li.header__li 
-                a(href="#!").header__link #[img(src="@img/top-icon-5.svg", alt="" draggable="false" loading="lazy")] Шар
-            li.header__li 
-                a(href="#!").header__link #[img(src="@img/top-icon-6.svg", alt="" draggable="false" loading="lazy")] О нас
-            li.header__li 
-                a(href="#!").header__link #[img(src="@img/top-icon-7.svg", alt="" draggable="false" loading="lazy")] Контакты
+        //- .header__list.container 
+        //-     li.header__li 
+        //-         a(href="#!").header__link.active #[img(src="@img/top-icon-1.svg", alt="" draggable="false" loading="lazy")] Букеты
+        //-     li.header__li 
+        //-         a(href="#!").header__link #[img(src="@img/top-icon-2.svg", alt="" draggable="false" loading="lazy")] Корзины
+        //-     li.header__li 
+        //-         a(href="#!").header__link #[img(src="@img/top-icon-3.svg", alt="" draggable="false" loading="lazy")] В коробке
+        //-     li.header__li 
+        //-         a(href="#!").header__link #[img(src="@img/top-icon-4.svg", alt="" draggable="false" loading="lazy")] Свадьбы
+        //-     li.header__li 
+        //-         a(href="#!").header__link #[img(src="@img/top-icon-5.svg", alt="" draggable="false" loading="lazy")] Шар
+        //-     li.header__li 
+        //-         a(href="#!").header__link #[img(src="@img/top-icon-6.svg", alt="" draggable="false" loading="lazy")] О нас
+        //-     li.header__li 
+        //-         a(href="#!").header__link #[img(src="@img/top-icon-7.svg", alt="" draggable="false" loading="lazy")] Контакты
