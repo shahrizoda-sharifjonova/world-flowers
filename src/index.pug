@@ -8,10 +8,11 @@ html(lang="en")
         title Document
     body 
         .wrapper 
-            include components/top 
-            +top 
-            include components/header 
-            +header 
+            .up
+                include components/top 
+                +top 
+                include components/header 
+                +header 
             include components/footer 
             +footer
         script(src="js/app.min.js") 

@@ -1,0 +1,98 @@
+.header{
+    padding: 15px 0;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__adresses{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 9px;
+    }
+    &__adress{
+        display: flex;
+        align-items: center;
+        column-gap: 18px;
+        font-weight: 400;
+        font-size: 16.0174px;
+        line-height: 22px;
+        color: #4B4A53;
+    }
+    &__order{     
+        display: flex;
+        align-items: flex-start;
+        column-gap: 5px;
+        a{     
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            color: #4B4A53;   
+            padding-bottom: 5px;
+            border-bottom: 2px dotted #4B4A53;
+        }
+    }
+    &__phone{
+        font-family: Lobster;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 38px;
+        text-align: right;
+        color: #E23E8F;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        background: #575269;
+        border-radius: 15px;
+        height: 60px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &__li{
+        height: 100%;
+        &:nth-of-type(1){
+            .header__link{
+                padding-left: 30px;
+                &.active,
+                &:hover{
+                    background: #E23E8F;
+                    border-radius: 15px 0 0 15px;
+                }
+            }
+        }
+        &:nth-of-type(7){
+            .header__link{
+                padding-right: 31px;
+                &.active,
+                &:hover{
+                    background: #E23E8F;
+                    border-radius: 0px 15px 15px 0;
+                }
+            }
+        }
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        height: 100%;
+        padding-right: 35px;
+        padding-left: 20px;
+        &.active,
+        &:hover{
+            background: #E23E8F;
+        }
+    }
+}
