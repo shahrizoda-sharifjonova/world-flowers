@@ -8,6 +8,13 @@
     }
     &__title{
         margin-bottom: 45px;
+        @include media(992){
+            margin-bottom: 25px;
+        }
+        @include media(768){
+            margin-bottom: 20px;
+            text-transform: lowercase;
+        }
     }
     &__content{
         display: flex;
@@ -15,21 +22,49 @@
         justify-content: space-between;
         column-gap: 10px;
         row-gap: 55px;
+        margin-bottom: 45px;
+        @include media(992){
+            column-gap: 5px;
+            row-gap: 25px;
+            margin-bottom: 25px;
+        }
+        @include media(767){
+            column-gap: 18px;
+            row-gap: 15px;
+            margin-bottom: 33px;
+        }
     }
     &__item{
         width: calc(25% - 7.5px);
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include media(992){
+            width: calc(25% - 3.75px);
+        }
+        @include media(767){
+            width: calc(50% - 9px);
+        }
     }
     &__img{
         border: 5px solid rgba(226, 62, 143, 0.5);
         border-radius: 18px;
         width: 100%;
         margin-bottom: 20px;
+        line-height: 0;
+        padding-bottom: 8px;
+        @include media(992){
+            border: 3px solid rgba(226, 62, 143, 0.5);
+            border-radius: 11px;
+            margin-bottom: 12px;
+        }
         img{
             width: 100%;
             border-radius: 18px;
+            line-height: 0;
+            @include media(992){
+                border-radius: 11px;
+            }
         }
     }
     &__subtitle{
@@ -40,13 +75,21 @@
         line-height: 38px;
         text-align: center;
         color: #4B4A53;
+        @include media(992){
+            font-size: 18px;
+            line-height: 22px
+        }
         span{
             font-family: Lobster;
             font-style: normal;
             font-weight: 400;
             font-size: 30px;
             line-height: 38px;
-            color: #E23E8F;            
+            color: #E23E8F;
+            @include media(992){
+                font-size: 18px;
+                line-height: 22px
+            }            
         }
     }
     &__desc{
@@ -55,5 +98,9 @@
         line-height: 22px;
         text-align: center;
         color: #4B4A53;
+        @include media(992){
+            font-size: 10px;
+            line-height: 13px;
+        }
     }
 }
