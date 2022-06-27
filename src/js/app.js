@@ -2,9 +2,19 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
-// const swiper = new Swiper();
+const swiper = new Swiper();
+
+new Swiper(".clients__swiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    breakpoints: {
+      768: {
+        slidesPerView: 6,
+      },
+    },
+});
 
 const menu = document.querySelector('.menu');
 const list = document.querySelector('.top__list');
@@ -15,4 +25,3 @@ menu.addEventListener('click', (e)=>{
     menu.classList.toggle('active')
     body.classList.toggle('hidden')
 })
-
