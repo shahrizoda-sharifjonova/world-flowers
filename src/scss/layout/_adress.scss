@@ -1,0 +1,83 @@
+.adress{
+    &__body{
+        position: relative;
+    }
+    &__map{
+        width: 100%;
+        border-radius: 15px;
+        iframe{
+            width: 100%;
+        }
+    }
+    &__abs{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: 1000;
+        background: #29253999;
+        backdrop-filter: blur(3px);
+        mix-blend-mode: normal;
+        border-radius: 15px 0px 0px 15px;
+        padding: 30px 44px 17px 38px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include media(992){
+            position: static;
+            width: calc(100% - 265px);
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 15px;
+            padding: 19px 30px 30px 30px;
+            background: #5C5269;
+        }
+        @include media(768){
+            width: calc(100% - 125px);
+        }
+        @include media(575){
+            width: calc(100% - 100px);
+        }
+        @include media(470){
+            width: 100%;
+        }
+    }
+    &__p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        max-width: 287px;
+        width: 100%;
+        @include media(992){
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 16px;
+            line-height: 22px;
+            max-width: 100%;
+            margin-bottom: 32px;
+        }
+    }
+    &__links{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 35px;
+        column-gap: 15px;
+        @include media(992){
+            justify-content: center;
+            padding-left: 0;
+            column-gap: 8px;
+        }
+        @include media(992){
+            column-gap: 15px;
+        }
+    }
+    &__link{
+        @include media(992){
+            width: 50px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

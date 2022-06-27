@@ -1016,6 +1016,69 @@
   border-radius: 18px;
 }
 
+.adress__body {
+  position: relative;
+}
+
+.adress__map {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.adress__map iframe {
+  width: 100%;
+}
+
+.adress__abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1000;
+  background: #29253999;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  mix-blend-mode: normal;
+  border-radius: 15px 0px 0px 15px;
+  padding: 30px 44px 17px 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.adress__p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  max-width: 287px;
+  width: 100%;
+}
+
+.adress__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 35px;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.adress__link img {
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1599,6 +1662,45 @@ li {
     height: 60px;
   }
 
+  .adress__abs {
+    position: static;
+    width: calc(100% - 265px);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    padding: 19px 30px 30px 30px;
+    background: #5C5269;
+  }
+
+  .adress__p {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .adress__links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+    -webkit-column-gap: 8px;
+       -moz-column-gap: 8px;
+            column-gap: 8px;
+  }
+
+  .adress__links {
+    -webkit-column-gap: 15px;
+       -moz-column-gap: 15px;
+            column-gap: 15px;
+  }
+
+  .adress__link {
+    width: 50px;
+  }
+
   .title {
     font-size: 28px;
     line-height: 35px;
@@ -1678,6 +1780,10 @@ li {
   }
 
   .offers__item {
+    width: calc(100% - 125px);
+  }
+
+  .adress__abs {
     width: calc(100% - 125px);
   }
 
@@ -1813,10 +1919,18 @@ li {
   .offers__item {
     width: calc(100% - 100px);
   }
+
+  .adress__abs {
+    width: calc(100% - 100px);
+  }
 }
 
 @media (max-width: 470px) {
   .offers__item {
+    width: 100%;
+  }
+
+  .adress__abs {
     width: 100%;
   }
 }
