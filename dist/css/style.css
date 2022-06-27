@@ -654,6 +654,105 @@
   color: #4B4A53;
 }
 
+.presents {
+  padding-bottom: 35px;
+}
+
+.presents__desc {
+  margin-bottom: 33px;
+}
+
+.presents__desc.presents__desc_last {
+  margin-bottom: 0;
+}
+
+.presents__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  color: #4B4A53;
+}
+
+.presents__p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #4B4A53;
+}
+
+.presents__p span {
+  color: #E23E8F;
+  font-weight: 600;
+}
+
+.presents__p a {
+  color: #4B4A53;
+  text-decoration: underline;
+}
+
+.presents__p a:hover,
+.presents__p a:focus {
+  color: #4B4A53;
+}
+
+.presents__p .presents__link {
+  color: #E23E8F;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.presents__p .presents__link:hover {
+  color: #E23E8F;
+}
+
+.presents__p .presents__a {
+  color: #E23E8F;
+  text-decoration: underline;
+  line-height: 30px;
+}
+
+.presents__p .presents__a:hover {
+  color: #E23E8F;
+}
+
+.presents__slider {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.presents .swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.presents .swiper-wrapper {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.presents .swiper-slide {
+  width: 100%;
+}
+
+.presents__img {
+  width: 100%;
+  line-height: 0;
+}
+
+.presents__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  line-height: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -806,6 +905,10 @@ li {
   .disable-xxl {
     display: none !important;
   }
+
+  .presents__desc.presents__desc_first {
+    margin-bottom: 17px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -824,6 +927,10 @@ li {
   .header__link {
     padding-right: 17px;
     padding-left: 12px;
+  }
+
+  .presents__slider {
+    margin-bottom: 60px;
   }
 }
 
@@ -1019,6 +1126,18 @@ li {
     line-height: 13px;
   }
 
+  .presents {
+    padding-bottom: 20px;
+  }
+
+  .presents__title {
+    margin-bottom: 15px;
+  }
+
+  .presents__slider {
+    margin-bottom: 35px;
+  }
+
   .title {
     font-size: 28px;
     line-height: 35px;
@@ -1081,6 +1200,20 @@ li {
   .bests__title span {
     font-size: 20px;
     line-height: 25px;
+  }
+
+  .presents__title {
+    font-size: 21px;
+    line-height: 30px;
+  }
+
+  .presents__p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .presents__slider {
+    margin-bottom: 60px;
   }
 
   .btn {

@@ -16,6 +16,19 @@ new Swiper(".clients__swiper", {
     },
 });
 
+new Swiper(".presents__swiper", {
+    slidesPerView: 1,
+    spaceBetween: 13,
+    breakpoints: {
+      992: {
+        slidesPerView: 4,
+      },
+      575:{
+        slidesPerView: 2,
+      }
+    },
+});
+
 const menu = document.querySelector('.menu');
 const list = document.querySelector('.top__list');
 const body = document.querySelector('body');
