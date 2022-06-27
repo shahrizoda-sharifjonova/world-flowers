@@ -53,8 +53,6 @@ li{
         line-height: 35px;
     }
     @include media(768){
-        font-size: 20px;
-        line-height: 25px;
     }
     span{
         font-family: Lobster;
@@ -67,10 +65,6 @@ li{
         @include media(992){
             font-size: 28px;
             line-height: 35px;
-        }
-        @include media(768){
-            font-size: 20px;
-            line-height: 25px;
         }
     }
 }
