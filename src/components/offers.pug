@@ -1,0 +1,46 @@
+mixin offers()
+    section.section.offers 
+        .offers__body.container 
+            .offers__item 
+                h2.offers__title Доставка цветов за 120 минут  
+                .offers__row 
+                    ul.offers__list 
+                        li.offers__li Домодедово,
+                        li.offers__li Авиационный
+                        li.offers__li Видное
+                        li.offers__li Подольск
+                        li.offers__li Климовск
+                    .offers__img 
+                        img(src="@img/offers-delivery.png", alt="" draggable="false" loading="lazy")
+                li.offers__li.offers__li_last Москву #[br] и другие города...
+                .offers__links
+                    a(href="#!").offers__link Смотреть все пункты доставки 
+                    a(href="#!")   
+                        img(src="@img/offers-arrow.svg", alt="" draggable="false" loading="lazy")
+            .offers__item 
+                h2.offers__title У нас есть всё, #[br] что Вам нужно
+                ul.offers__list 
+                    li.offers__li шары и мягкие игрушки,
+                    li.offers__li коробки с цветами,
+                    li.offers__li сладости и фрукты в корзинке,
+                    li.offers__li подарки, открытки и сувениры.
+                .offers__gifts 
+                    .offers__gift 
+                        img(src="@img/offers-img-1.png", alt="" draggable="false" loading="lazy")
+                    .offers__gift 
+                        img(src="@img/offers-img-2.png", alt="" draggable="false" loading="lazy")
+                    .offers__gift 
+                        img(src="@img/offers-img-3.png", alt="" draggable="false" loading="lazy")
+                .offers__links 
+                    a(href="#!").offers__link Доставим вместе с букетом!
+                    a(href="#!")  
+                        img(src="@img/offers-arrow.svg", alt="" draggable="false" loading="lazy")
+                .offers__abs 
+                    img(src="@img/offers-balloons.png", alt="" draggable="false" loading="lazy")
+            .offers__item
+                h2.offers__title Хотите получить скидку и узнать про акции?
+                form(action="").offers__form
+                    input(type="email" placeholder="Укажите вашу эл. почту").offers__input
+                    button(type="submit").offers__btn ПОЛУЧИТЬ
+                .offers__abs 
+                    img(src="@img/offers-discard.png", alt="" draggable="false" loading="lazy") 
